@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Server specific
+/server/dist/
+# Client specific
+/client/build/
