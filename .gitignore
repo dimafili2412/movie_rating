@@ -133,3 +133,5 @@ dist
 /server/dist/
 # Client specific
 /client/build/
+# Temp file
+temp.txt
