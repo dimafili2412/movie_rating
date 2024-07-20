@@ -17,13 +17,13 @@ app.use(passport.session());
 
 // Database Connection
 mongoose
-  .connect(process.env['MONGO_URI'] || '')
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+    .connect(process.env['MONGO_URI'] || '')
+    .then(() => {
+        console.log('Connected to MongoDB');
+    })
+    .catch((err) => {
+        console.error(err);
+    });
 
 // Routes
 app.use('/auth', authRouter);
@@ -31,5 +31,5 @@ app.use('/user', userRouter);
 
 const PORT = process.env['NODE_ENV'] === 'production' ? 443 : 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
